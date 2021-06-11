@@ -7,21 +7,19 @@ use Illuminate\Support\Facades\Route;
 
 //////////User Interface template
 
-Route::get('/', function () {
-    return view('homassist');
-});
+Route::get('/', 'App\HomeController@index');
 
 /////////Admin panel template
 
-Route::get('/panel', function () {
-    return view('dashboard.home');
-});
+Route::get('/admin', 'Admin\PanelController@index');
 
 Route::group(
     ['namespace' => 'App\Http\Controllers', 'middleware' => ['auth:web'], 'prefix' => 'admin', 'as' => 'admin.'],
-    function () {});
+    function () {
+    }
+);
 
-Route::group(['namespace'=>'App\Http\Controllers\Auth'], function () {
+Route::group(['namespace' => 'App\Http\Controllers\Auth'], function () {
     // Authentication Routes...
     Route::get('login', 'LoginController@showLoginForm')->name('login');
     Route::get('login', 'LoginController@showLoginForm')->name('login');
@@ -40,4 +38,4 @@ Route::group(['namespace'=>'App\Http\Controllers\Auth'], function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', 'App\HomeController@index')->name('home');

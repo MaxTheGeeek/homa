@@ -17,9 +17,12 @@ class CreateUsersTable extends Migration
             $table->id();
             $table->string('name', 100)->comment('name of user/manager');
             $table->string('email', 100)->unique()->comment('email of user/manager');
-            $table->string('phone', 25)->unique()->comment('phone of user/manager');
             $table->timestamp('email_verified_at')->nullable();
+            $table->string('phone', 25)->unique()->nullable()->comment('phone of user/manager');
             $table->string('password', 256)->comment('password of user/manager');
+            $table->string('address', 255)->nullable()->comment('address of each user');
+            $table->string('image', 255)->nullable()->comment('user profile photo');
+            $table->enum('role', ['admin', 'manager', 'user'])->default('user');
             $table->rememberToken();
             $table->timestamps();
         });

@@ -51,7 +51,7 @@
                     </div>
                     <div class="signup-image">
                         <figure>
-                            <img src="assets/img/signup-1.png" alt="sing up image" />
+                            <img src="dashboard/layouts/assets/img/signup-1.png" alt="sing up image" />
                         </figure>
                     </div>
                 </div>
