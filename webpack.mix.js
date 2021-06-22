@@ -21,8 +21,8 @@ mix.styles(
         'resources/css/util.css',
         'resources/css/bootstrap.css',
         'resources/css/animate.css/animate.css',
-        'resources/css/font-awesome/css/font-awesome.min.css',
-        'resources/css/ionicons/css/ionicons.min.css',
+        'resources/css/font-awesome/css/font-awesome.css',
+        'resources/css/ionicons/css/ionicons.css',
         'resources/css/boxicons/css/boxicons.css',
         'resources/js/owl.carousel/assets/owl.carousel.css',
         'resources/css/venobox.min.css'
