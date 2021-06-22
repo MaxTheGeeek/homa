@@ -15,7 +15,7 @@ Route::get('/admin', 'Admin\PanelController@index');
 
 
 
-Route::group(['namespace'=>'\App\Http\Controllers\Auth','middleware' => 'auth'], function () {
+Route::group(['namespace' => '\App\Http\Controllers\Auth', 'middleware' => 'auth'], function () {
     // Authentication Routes...
     Route::get('login', 'LoginController@showLoginForm')->name('login');
     Route::get('login', 'LoginController@showLoginForm')->name('login');
@@ -34,4 +34,5 @@ Route::group(['namespace'=>'\App\Http\Controllers\Auth','middleware' => 'auth'],
 
 Auth::routes();
 
-// Route::get('/home', 'App\HomeController@index')->name('home');
+
+Route::get('/home', 'App\FirstController@index')->name('home');

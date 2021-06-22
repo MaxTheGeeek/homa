@@ -1,12 +1,12 @@
-
-
+<!doctype html>
+<html lang="en">
 <body>
 
-            @yield('content')
+@yield('content')
 
-    <!-- JS -->
-    <script src="homa-ui/vendor/jquery/jquery.min.js"></script>
-    <script src="homa-ui/assets/js/form.js"></script>
+<!-- JS -->
+<script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ asset('js/app.js') }}"></script>
 </body>
-
 </html>
+

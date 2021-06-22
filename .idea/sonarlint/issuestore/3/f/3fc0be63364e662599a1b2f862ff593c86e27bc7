@@ -1,0 +1,11 @@
+
+vjavascript:S3776"URefactor this function to reduce its Cognitive Complexity from 179 to the 15 allowed.(®Äÿ™ùÿÿÿÿ
+Cjavascript:S1186>"'Unexpected empty method 'cb_post_open'.(šá
+Djavascript:S1186@"(Unexpected empty method 'cb_post_close'.(ÉÇÕó
+Jjavascript:S1186A")Unexpected empty method 'cb_post_resize'.(§£ûéşÿÿÿÿ
+Cjavascript:S1186B"'Unexpected empty method 'cb_after_nav'.(çºàÒ
+Hjavascript:S1186C",Unexpected empty method 'cb_content_loaded'.(¡äÓ
+Cjavascript:S1186D""Unexpected empty method 'cb_init'.(˜¸‹àÿÿÿÿÿ
+\javascript:S3516g";Refactor this function to not always return the same value.(¨Æ§Ôüÿÿÿÿ
+Ojavascript:S1117­"2'autoplay' is already declared in the upper scope.(éÎÌŠ
+ojavascript:S3699¨"RRemove this use of the output from "updateOL"; "updateOL" doesn't return anything.(¥»ƒª
